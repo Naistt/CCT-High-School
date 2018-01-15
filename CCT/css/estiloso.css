@@ -1,0 +1,255 @@
+input[type=text], input[type=email], input[type=password]{
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus  {
+    background-color: lightgray;
+    width: 34%;
+}
+input[type=text], input[type=email], input[type=password]  {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.customButton {
+    background-color: #999;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buttonBlack:hover {
+    background-color: #3D3D3D;
+    color: white;
+}
+
+.registerSpacing {
+    margin-left: 50px;
+}
+
+
+.textoCadastro {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.containerP {
+    background-color: rgb(45,28,10);
+    overflow: hidden;
+}
+.containerGrid {
+    background-color: rgb(200, 197, 194)
+}
+
+.listFooter {
+    font-weight: 700;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(200, 197, 194)
+}
+
+.row.vertical-divider > div[class^="col-"] {
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.row.vertical-divider div[class^="col-"]:first-child {
+    border-left: none;
+}
+.row.vertical-divider div[class^="col-"]:last-child {
+    border-right: none;
+}
+
+
+/*Vertical Line*/
+.row.vertical-divider {
+    overflow: hidden;
+}
+.row.vertical-divider > li {
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.row.vertical-divider li:first-child {
+    border-left: none;
+}
+.row.vertical-divider li:last-child {
+    border-right: none;
+}
+/*Fim vertical line*/
+
+.caixadeTexto {
+    border-radius: 4px 4px 4px 4px;
+}
+.logo {
+    max-width: 250px;
+    max-height: 250px;
+    /*margin-left: 1000px;*/
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: cursive, sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #000;
+}
+
+/* Demonstrates the page where the user is at */
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*Botao Marrom Comprar*/
+.btn-1 {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 12px 50px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-1:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-1:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	/*speak: none;*/
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+.btn-2 {
+	border: 3px solid #AE700F;
+	color: #AE700F;
+}
+.btn-3:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #AE700F;
+}
+
+.btn-3:hover,
+.btn-3:active {
+	color: #fff;
+    border: 3px solid #ece6c8;
+    background: #D5872A;
+}
+
+.btn-3:hover:after,
+.btn-3:active:after {
+	width: 100%;
+}
+/*Fim botao marrom comprar*/
+
+h2 {
+    max-width: 17ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.productSpacing {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+/* Fixes the menu bar on the top */
+ul img {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-inner{
+  width:100%;
+  /*max-height: 400px;*/
+}

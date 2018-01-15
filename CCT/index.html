@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+	    <title>Door's  Inc.</title>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	    <link rel="stylesheet" href="css/estiloso.css">
+	    <link rel="stylesheet" href="css/bootstrap.css">
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			function myMap() {
+				var mapProp = { 
+					center: new google.maps.LatLng(51.5, -0.12),
+					zoom: 10,
+				}
+				var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+			}
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="containerP container-fluid">
+			<div class="row">
+				<div class="col-xs-6 col-sm-8 col-lg-10 col-md-6">
+						<img src="imgs/logos/precision3.jpg" class="img-responsive" style="max-width: 250px;max-height: 250px;float: left;margin-top: 20px;margin-bottom: 5px;" draggable="false" />
+				</div>
+			</div>
+			</div>
+		</header>
+		<nav id="menu">                
+			<ul class="nav nav-tabs">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Door's Inc.</a>
+				</div>
+				<li class="active"><a data-toggle="pill" href="#Home">Home</a></li>
+				<li><a data-toggle="pill" href="#Produtos">Produtos</a></li>
+				<li><a data-toggle="pill" href="#Contato">Contato</a></li>
+				<li><a data-toggle="pill" href="#Suporte">Suporte</a></li>
+				<li><a data-toggle="pill" href="#Aempresa">A Empresa</a></li>                     
+				<li style="float:right"><a data-toggle="pill" href="#Login">Entrar</a></li>
+			</ul>
+		</nav>
+        <br />
+
+        <div class="container">
+            <div class="tab-content">
+                <div id="Home" class="tab-pane fade in active">
+
+                    <!--  in active on class="tab-pane fade" -->
+                    <h3>&ensp;Home</h3>
+                    <hr />
+
+					<div class="row">
+						<div class="col-xs-3 col-md-2"></div>
+						<div class="col-xs-6 col-md-8">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+							<!-- Indicators - 1 for each picture -->
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel" data-slide-to="1"></li>
+									<li data-target="#myCarousel" data-slide-to="2"></li>
+									<li data-target="#myCarousel" data-slide-to="3"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="imgs/slide-1.jpg" class="img-responsive" style="width:100%; height:500px;">
+										<div class="carousel-caption">
+											<h3>Precisa de nossa ajuda?</h3>
+											<p>Entre em contato conosco!</p>
+										</div>
+									</div>
+								
+
+									<div class="item">
+										<img src="imgs/slide-2.jpg" class="img-responsive" style="width:100%; height:500px;">
+										<div class="carousel-caption">
+											<h3>Precisa viajar e se manter comunicado?</h3>
+											<p>Deixa que a gente resolve</p>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="imgs/slide-3.jpg" class="img-responsive" style="width:100%; height:500px;">
+										<div class="carousel-caption">
+											<h3>Novas filiais</h3>
+											<p>Já dispomos de filiais ao redor do mundo inteiro!</p>
+										</div>
+									</div>
+									
+									<div class="item">
+										<img src="imgs/office.jpg" class="img-responsive" style="width:100%; height:500px;">
+										<div class="carousel-caption">
+											<h3>Dê uma olhada em nosso arsenal</h3>
+											<p>Temos de tudo para todos os tipos de clientes</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Left and right controls -->
+								<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					<div class="col-xs-3 col-md-2"></div>
+					</div>
+					<br />
+				</div>
+                <div id="Produtos" class="tab-pane fade">
+                    <h3>&ensp;Produtos</h3>
+					<hr />
+					<!-- Primeira linha -->
+					<div class="row">
+						<div class="column">
+							<img src="imgs/produtos/razer-phone.jpg" class="img-fluid img-thumbnail" style="max-width: 80%;max-height: 80%;margin-left: 20px;">
+							<div class="productSpacing">
+								<h2>Smartphone X</h2>
+								<p>R$ 1.599,00 <small>à vista</small></p>
+								<button class="btn-1 btn-2 btn-3">Comprar</button>
+							</div>
+						</div>
+						<div class="column">
+							<img src="imgs/produtos/razer-phone-2.jpg" class="img-fluid img-thumbnail" style="max-width: 80%;max-height: 80%;margin-left: 20px;">
+							<div class="productSpacing">
+								<h2>Smartphone Y Luminous Black</h2>
+								<p>R$ 1.299,00 <small>à vista</small></p>
+								<button class="btn-1 btn-2 btn-3">Comprar</button>
+							</div>
+						</div>
+						<div class="column">
+							<img src="imgs/produtos/razer-phone-3.jpeg" class="img-fluid img-thumbnail" style="max-width: 80%;max-height: 80%;margin-left: 20px;">
+							<div class="productSpacing">
+								<h2>Smartphone Z</h2>
+								<p>R$ 1.399,00 <small>à vista</small></p>
+								<button class="btn-1 btn-2 btn-3">Comprar</button>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<br />
+					</div>
+					<!-- Fim primeira linha -->
+					<!-- Segunda linha -->
+					<div class="row">
+						<div class="column">
+							<img src="imgs/produtos/razer-phone-3.jpeg" class="img-fluid img-thumbnail" style="max-width: 80%;max-height: 80%;margin-left: 20px;">
+							<div class="productSpacing">
+								<h2>Smartphone Z</h2>
+								<p>R$ 1.399,00 <small>à vista</small></p>
+								<button class="btn-1 btn-2 btn-3">Comprar</button>
+							</div>
+						</div>
+						<div class="column">
+							<img src="imgs/produtos/razer-phone.jpg" class="img-fluid img-thumbnail" style="max-width: 80%;max-height: 80%;margin-left: 20px;">
+							<div class="productSpacing">
+								<h2>Smartphone Y Luminous Black</h2>
+								<p>R$ 1.599,00 <small>à vista</small></p>
+								<button class="btn-1 btn-2 btn-3">Comprar</button>
+							</div>
+						</div>
+						<div class="column">
+							<img src="imgs/produtos/razer-phone-2.jpg" class="img-fluid img-thumbnail" style="max-width: 80%;max-height: 80%;margin-left: 20px;">
+							<div class="productSpacing">
+								<h2>Smartphone X</h2>
+								<p>R$ 1.299,00 <small>à vista</small></p>
+								<button class="btn-1 btn-2 btn-3">Comprar</button>
+							</div>
+						</div>
+					</div>
+					<!-- Fim segunda linha -->
+					<!-- Terceira linha -->
+					<div class="row">
+						<div class="column">
+							<img src="imgs/produtos/razer-phone-2.jpg" class="img-fluid img-thumbnail" style="max-width: 80%;max-height: 80%;margin-left: 20px;">
+							<div class="productSpacing">
+								<h2>Smartphone Y</h2>
+								<p>R$ 1.299,00 <small>à vista</small></p>
+								<button class="btn-1 btn-2 btn-3">Comprar</button>
+							</div>
+						</div>
+						<div class="column">
+							<img src="imgs/produtos/razer-phone-3.jpeg" class="img-fluid img-thumbnail" style="max-width: 80%;max-height: 80%;margin-left: 20px;">
+							<div class="productSpacing">
+								<h2>Smartphone Z Luminous Black</h2>
+								<p>R$ 1.399,00 <small>à vista</small></p>
+								<button class="btn-1 btn-2 btn-3">Comprar</button>
+							</div>
+						</div>
+						<div class="column">
+							<img src="imgs/produtos/razer-phone.jpg" class="img-fluid img-thumbnail" style="max-width: 80%;max-height: 80%;margin-left: 20px;">
+							<div class="productSpacing">
+								<h2>Smartphone X</h2>
+								<p>R$ 1.599,00 <small>à vista</small></p>
+								<button class="btn-1 btn-2 btn-3">Comprar</button>
+							</div>
+						</div>
+					</div>
+					<!-- Fim terceira linha -->
+                </div>
+                <div id="Contato" class="tab-pane fade">
+                    <h3>&ensp;Contato</h3>
+					<hr />
+					<div class="row">
+						<div class="col-xs-6">
+							<h4>Fale com a Doors - Dúvidas sobre produtos e vendas</h4>
+							<p>Doors Online Store</p>
+							<p>Visite a <a href="#" style="color: #017C5D">Doors Online Store</a> para comprar hardware e software da Doors e acessórios fabricados por terceiros. Você também pode comprar por telefone, ligue para 0800-000-0000 de segunda a sexta-feira,
+							das 9h às 20h e sábado, das 9h às 18h (horário de Brasília).</p>
+							<br />
+
+							<h4>Doors Stores</h4>
+							<p>Experimente o estilo de vida digital em qualquer uma das <a href="#" style="color: #017C5D">Doors Stores</a> de todo o país. Encontre horários de funcionamento e informações de contato para todos os locais.</p>
+							<br />
+
+							<h4>Localizar revendedores autorizados Doors</h4>
+							<p>Use o nosso <a data-toggle="pill" href="#Suporte" style="color: #017C5D">Localizador de revendedores</a> para encontrar um revendedor autorizado Doors.</p><br />
+							<p>Os revendedores autorizados Doors oferecem uma combinação de conhecimento do mercado com serviços para várias plataformas e soluções Mac para os mais diferentes segmentos do mercado.</p>
+							<br />
+
+							<h4>Localizar Centros autorizados de treinamento</h4>
+							<p>Use o nosso <a data-toggle="pill" href="#Produtos" style="color: #017C5D">Localizador de Centros de treinamento</a> para encontrar Centros autorizados de treinamento Dors em várias partes do mundo.</p>
+							<br />
+
+							<h4>Localizar Consultores</h4>
+							<p>Visite a nossa página <a href="#" style="color: #017C5D">Doors Consultants Network</a> para encontrar um consultor no Brasil.</p>
+							<br />
+
+							<h4>Torne-se um consultor, revendedor ou provedor de serviços</h4>
+							<p><a href="#" style="color: #017C5D">Participe na Doors</a> como consultor, revendedor ou provedor de serviços.</p>
+							<br />
+
+							<h4>Atendimento ao cliente</h4>
+							<p>Para obter informações atualizadas sobre o seu pedido ou mudar alguma coisa em um pedido efetuado na Doors Online Store, acesse <a href="#" style="color: #017C5D">Informações sobre pedidos</a>. Você também pode entrar em contato com o Atendimento ao cliente da Doors Store pelo número 0800-000-0000 ou acessar a <a href="#" style="color: #017C5D">Ajuda</a> para obter mais detalhes.</p>
+							<br />
+
+							<h4>Contatos corporativos no Brasil</h4>
+							<p>Doors Store (Pessoa física - Consumidor final e área da Educação) <b>0800-000-0000</b></p>
+							<p>Doors Store (Pequenas empresas) <b>0800-000-0000</b></p>
+							<br />
+						</div>
+						<div class="col-xs-6">
+							<h4>Suporte técnico e de produto - Navegue pelo suporte online</h4>
+							<p>Visite o site de <a href="#" style="color: #017C5D">Suporte DoorsCare</a> para obter respostas rápidas, ver tutoriais de produtos, guias práticos, manuais e artigos técnicos mais detalhados.</p>
+							<br />
+							<h4>Entre em contato com o suporte da Doors</h4>
+							<p>Precisa de serviço ou suporte? <a href="#" style="color: #017C5D">Comece sua solicitação online</a> e nós encontraremos uma solução para você.</p>
+							<br />
+							<p>Mais formas de obter ajuda:</p>
+							<p><a href="#" style="color: #017C5D">Entre em contato com o suporte da DoorsView Store</a></p>
+							<p>Brasil. Suporte técnico para dispositivos Doors: <b>0800-000-0000</b></p>
+							<p><a href="#" style="color: #017C5D">Veja os telefones de suporte em outros países do mundo</a></p>
+							<p><a href="#" style="color: #017C5D">Marque um horário em um Genius Bar da Doors Store</a></p>
+							<p><a href="#" style="color: #017C5D">Entre em contato com uma operadora móvel</a></p>
+							<br />
+
+							<p>Os clientes dos dispositivos Doors têm direito à suporte telefônico gratuito durante 90 dias, a partir da data de compra do produto. A Doors oferece <a href="#" style="color: #017C5D">suporte técnico online</a> para os seus produtos, além do período inicial de 90 dias.</p>
+							<br />
+							<h4>Produtos Doors perdidos e roubados</h4>
+							<p>Caso você tenha perdido ou encontrado algum produto Doors, <a href="#" style="color: #017C5D">entre em contato com a delegacia mais próxima para comunicar o fato</a>. Você também encontra uma lista de números de série associados à sua conta Doors e obtém informações sobre como usar Buscar Dispositivo Doors.</p>
+							<br />
+							<h4>Assistência Técnica Autorizada da Doors</h4>
+							<p>Entre em contato com a <a href="#" style="color: #017C5D">Assistência Técnica Autorizada da Doors</a> para obter serviços de suporte e conserto para dispositivos.</p>
+						</div>
+					</div>					
+                </div>
+                <div id="Suporte" class="tab-pane fade">
+                    <h3>&ensp;Suporte</h3>
+					<hr />
+					<p>Aqui você pode conferir nossas filiais de Suporte mais próximas de você.</p>
+					<div id="googleMap" style="width:100%; height:400px;"></div>
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXarQ83qervJfdf0tkRmAtQcnYLgsmhXA&callback=myMap"></script>
+					<br />
+                </div>
+                <div id="Aempresa" class="tab-pane fade">
+                    <h3>&ensp;A Empresa</h3>
+					<hr />
+					<p>Aqui você pode conferir sobre a Liderança da Doors.</p>
+					<div class="row">
+						<div class="col-xs-3"></div>
+						<div class="col-xs-3">
+							<img src="imgs/gallery.png"><br />
+							<small>Vinicius - Presidente</small>
+						</div>
+						<div class="col-xs-3">
+							<img src="imgs/gallery.png"><br />
+							<small>João Pedro - Coordenador de Finanças</small>
+						</div>
+						<div class="col-xs-3"></div>
+					</div>
+					<br />
+					<div class="row">
+						<div class="col-xs-3"></div>
+						<div class="col-xs-3">
+							<img src="imgs/gallery.png"><br />
+							<small>Stephani - Analista e Coordenadora de Marketing</small>
+						</div>
+						<div class="col-xs-3">
+							<img src="imgs/gallery.png"><br />
+						</div>
+						<div class="col-xs-3"></div>
+					</div>
+					<br />
+					<div class="row">
+						<div class="col-xs-3"></div>
+						<div class="col-xs-3">
+							<img src="imgs/gallery.png"><br />
+						</div>
+						<div class="col-xs-3">
+							<img src="imgs/gallery.png"><br />
+						</div>
+						<div class="col-xs-3"></div>
+					</div>
+					<br />
+					<div class="row">
+						<div class="col-xs-3"></div>
+						<div class="col-xs-3">
+							<img src="imgs/gallery.png"><br />
+						</div>
+						<div class="col-xs-3">
+							<img src="imgs/gallery.png"><br />
+						</div>
+						<div class="col-xs-3"></div>
+					</div>
+					<br />
+					<div class="row">
+						<div class="col-xs-3"></div>
+						<div class="col-xs-3">
+							<img src="imgs/gallery.png"><br />
+						</div>
+						<div class="col-xs-3">
+							<img src="imgs/gallery.png"><br />
+						</div>
+						<div class="col-xs-3"></div>
+					</div>
+					<br />
+                </div>
+                <div id="Login" class="tab-pane fade">
+                    <h3>&ensp;Registre-se ou faça login</h3>
+					<hr />
+                    <!--<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>-->
+					<div class="registerSpacing">
+						<div class="row row vertical-divider" style="margin-left: 2px;">
+							<div class="col-xs-6">
+								<h4 class="textoCadastro">Registro</h4>
+								<p class="textoCadastro">Preencha os campos abaixo</p>
+								
+								<form>
+									<input type="text" placeholder="Nome"> <br /> <br />
+									<input type="text" placeholder="Email"> <br /> <br />
+									<input type="button" value="Prosseguir" class="customButton buttonBlack">
+								</form>
+							</div>
+							<div class="col-xs-6">
+								<h4 class="textoCadastro">Entrar</h4>
+								<p class="textoCadastro">Digite os campos para logar</p>
+								<form>
+									<input type="text" placeholder="Email"> <br /> <br />
+									<input type="password" placeholder="Senha"> <br /> <br />
+									<input type="button" value="Entrar" class="customButton buttonBlack">
+								</form>
+							</div>
+						</div>
+						<br />
+					</div>
+                </div>
+            </div>
+        </div>
+		<br />
+		<div class="containerGrid">
+			<div>
+				<br />
+				<img src="imgs/logos/precision3-cropped.png" style="max-width: 25px; max-height: 25px; margin-left: 23px;">
+				<img src="imgs/setinha2.png" style="max-width: 25px; max-height: 25px;">Fale com a Doors
+			</div>
+			<hr />
+			<div class="row row vertical-divider" style="margin-left: 2px;">
+				<div class="col-xs-3">
+					<p style="font-weight:700">Descobrir e Comprar</p>
+					<a href="#"><p>Smartphones</p></a>
+					<a href="#"><p>Tablets</p></a>
+					<a href="#"><p>Notebooks</p></a>
+					<a href="#"><p>TV</p></a>
+					<a href="#"><p>Acessórios</p></a>
+				</div>
+				<div class="col-xs-3">
+					<p style="font-weight:700">Doors Store</p>
+					<a href="#"><p>Encontre uma loja</p></a>
+					<a href="#"><p>Genius Bar</p></a>
+					<a href="#"><p>Hoje na Doors</p></a>
+					<a href="#"><p>Visita</p></a>
+					<a href="#"><p>Status do seu pedido</p></a>
+				</div>
+				<div class="col-xs-3">
+					<p style="font-weight:700">Para você</p>
+					<a href="#"><p>Doors e você</p></a>
+					<a href="#"><p>Comprar para mim</p></a>
+					<p style="font-weight:700">Para Empresas</p>
+					<a href="#"><p>Doors e os Negócios</p></a>
+					<a href="#"><p>Comprar para sua empresa</p></a>
+				</div>
+				<div class="col-xs-3">
+					<p style="font-weight:700">Sua conta</p>
+					<a href="#"><p>Gerenciar sua conta Doors</p></a>
+					<a href="#"><p>Conta Doors Store</p></a>
+					<p style="font-weight:700">Sobre a Doors</p>
+					<a href="#"><p>Acessibilidade</p></a>
+					<a href="#"><p>Privacidade e Responsabilidade dos fornecedores</p></a>
+				</div>
+			</div>
+			<hr />
+			<small style="margin-left: 12px;">Copyright © 2017 Doors Inc. Todos os direitos reservados. Doors Portable Brasil Ltda. CNPJ: 00.000.000/0000-00</small>
+			<br />
+			<a href="#">
+				<ul class="listFooter row vertical-divider" style="margin-left: 9px;">
+					<li>Política de Privacidade</li>
+					<li>Política de Vendas</li>
+					<li>Avisos Legais</li>
+					<li>Mapa do Site</li>
+				</ul>
+				<br />
+				<br />
+			</a>
+		</div>
+    </body>
+</html>
